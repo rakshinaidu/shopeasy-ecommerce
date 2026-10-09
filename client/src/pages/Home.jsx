@@ -56,8 +56,7 @@ export default function Home() {
                 src={item.image}
                 className="card-img-top"
                 alt={item.title}
-                style={{ height: 220, width: "100%", objectFit: "cover" }}
-              />              
+                style={{ height: 220, width: "100%", objectFit: "contain", backgroundColor: "#f1f3f5" }}              />              
                 <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{item.title}</h5>
                 <p className="mb-1 text-muted">Seller: {item.seller}</p>

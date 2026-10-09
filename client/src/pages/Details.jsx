@@ -42,8 +42,7 @@ export default function Details() {
           src={item.image}
           alt={item.title}
           className="rounded w-100"
-          style={{ maxHeight: 420, objectFit: "cover" }}
-        />
+          style={{ maxHeight: 420, objectFit: "contain", backgroundColor: "#f1f3f5" }}        />
       </div>
       <div className="col-md-6">
         <h2>{item.title}</h2>
