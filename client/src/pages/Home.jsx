@@ -52,15 +52,20 @@ export default function Home() {
         {filtered.map((item) => (
           <div className="col-12 col-sm-6 col-lg-4" key={item._id}>
             <div className="card h-100 shadow-sm">
-              <img src={item.image} className="card-img-top" alt={item.title} />
-              <div className="card-body d-flex flex-column">
+              <img
+                src={item.image}
+                className="card-img-top"
+                alt={item.title}
+                style={{ height: 220, width: "100%", objectFit: "cover" }}
+              />              
+                <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{item.title}</h5>
                 <p className="mb-1 text-muted">Seller: {item.seller}</p>
                 <p className="mb-1">Category: {item.category}</p>
                 <p className="mb-1">Rating: {item.rating} ★</p>
                 <p className="fw-bold fs-5">₹{item.price}</p>
-                <div className="mt-auto d-flex gap-2">
-                  <Link to={`/details/${item._id}`} className="btn btn-outline-primary flex-fill">
+                <div className="mt-3 d-flex gap-2">
+                <Link to={`/details/${item._id}`} className="btn btn-outline-primary flex-fill">
                     View Details
                   </Link>
                   <button className="btn btn-success flex-fill" onClick={() => handleAdd(item)}>

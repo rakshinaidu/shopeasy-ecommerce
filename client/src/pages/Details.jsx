@@ -38,7 +38,12 @@ export default function Details() {
   return (
     <div className="row g-4">
       <div className="col-md-6">
-        <img src={item.image} alt={item.title} className="img-fluid rounded" />
+        <img
+          src={item.image}
+          alt={item.title}
+          className="rounded w-100"
+          style={{ maxHeight: 420, objectFit: "cover" }}
+        />
       </div>
       <div className="col-md-6">
         <h2>{item.title}</h2>
