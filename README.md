@@ -2,8 +2,8 @@
 
 A full-stack e-commerce app built with React (Vite), Node/Express and MongoDB.
 
-**Live demo:** <your Vercel link>
-**API:** <your Render link>
+**Live demo:** https://shopeasy-ecommerce-six.vercel.app
+**API:** https://shopeasy-api-2o48.onrender.com
 
 ## Features
 - Register and login with JWT authentication (React Context, token in localStorage)
